@@ -51,8 +51,8 @@ namespace VttViewer.Pages {
         }
 
         public string GetTimeStringFor(SubtitleItem item) {
-            var startTimeStr = (item.StartTime/1000).ToString("#.#s");
-            var endTimeStr = (item.EndTime / 1000).ToString("#.#s");
+            var startTimeStr = (item.StartTime/1000.0).ToString("#.#s");
+            var endTimeStr = (item.EndTime / 1000.0).ToString("#.#s");
             return $"{startTimeStr} → {endTimeStr}";
         }
     }
