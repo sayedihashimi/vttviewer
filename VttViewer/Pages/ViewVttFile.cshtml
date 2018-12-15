@@ -1,0 +1,23 @@
+﻿@page "/view/{filename}"
+@model ViewVttFileModel
+
+<h1>File: @Model.Filename</h1>
+
+<table id="vttTable">
+    <thead>
+        <tr>
+            <td>Time</td>
+            <td>Text</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.Subtitles){
+            <tr class="subtitleItemRow">
+                <td class="subtitleTime">@Model.GetTimeStringFor(item)</td>
+                <td>
+                    <pre>@Model.GetStringFor(item)</pre>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
