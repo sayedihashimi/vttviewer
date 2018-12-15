@@ -14,9 +14,7 @@
         @foreach(var item in Model.Subtitles){
             <tr class="subtitleItemRow">
                 <td class="subtitleTime">@Model.GetTimeStringFor(item)</td>
-                <td>
-                    <pre>@Model.GetStringFor(item)</pre>
-                </td>
+                <td>@Model.GetStringFor(item)</td>
             </tr>
         }
     </tbody>

@@ -6,13 +6,10 @@
 
 #vttTable {
     border-collapse: collapse;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:large;
+    font-family: Verdana, Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
 }
 
-.subtitleItemRow > td > pre {
-    margin: 0;
-}
 
 .subtitleItemRow:nth-child(even) {
     background: #F0F0F0;
@@ -25,4 +22,7 @@
 .subtitleTime {
     font-family: Courier New, Courier, monospace;
     padding-right: 50px;
+}
+.subtitleText{
+
 }
